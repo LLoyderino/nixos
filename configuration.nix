@@ -61,6 +61,12 @@
     # wifi.powersave = false; # This should™ help against NetworkManager crashing after sleep mode
   };
 
+  # Bluetooth settings
+  hardware.bluetooth = {
+    enable = true;
+    powerOnBoot = false;
+  };
+
   # Set your time zone.
   time.timeZone = "Europe/Rome";
 
