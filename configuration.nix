@@ -263,6 +263,7 @@
   environment.systemPackages = with pkgs; [
     # Extra Gnome goodies
     gnomeExtensions.appindicator
+    gnomeExtensions.freon
 
     # Utils I want to have on my root :)
     fzf
