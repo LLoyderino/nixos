@@ -170,6 +170,7 @@
       nodejs_22
       podman-desktop
       vscode
+      gcc
 
       # Emacs
       djview                   # Viewing djvu files
