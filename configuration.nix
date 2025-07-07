@@ -99,7 +99,23 @@
   };
 
   # Enable CUPS to print documents.
-  services.printing.enable = true;
+  services.printing = {
+    enable = true;
+    drivers = with pkgs; [
+      gutenprint
+      # HP Printer drivers
+      hplip
+      hplipWithPlugin
+    ];
+    extraConf = ''
+      ErrorPolicy retry-job
+    '';
+  };
+  services.avahi = {
+    enable = true;
+    nssmdns4 = true;
+    nssmdns6 = true;
+  };
 
   # Enable sound with pipewire.
   services.pulseaudio.enable = false;
@@ -321,8 +337,10 @@
   # services.openssh.enable = true;
 
   # Open ports in the firewall.
-  # networking.firewall.allowedTCPPorts = [ ... ];
-  # networking.firewall.allowedUDPPorts = [ ... ];
+  networking.firewall = {
+    allowedTCPPorts = [ 631 ];
+    # allowedUDPPorts = [ ... ];
+  };
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
 
