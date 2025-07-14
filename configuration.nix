@@ -14,40 +14,6 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  # Temp: to run puppeteer
-  programs.nix-ld.enable = true;
-  programs.nix-ld.libraries = with pkgs; [
-    alsa-lib
-    atk
-    atkmm
-    cairo
-    cups
-    dbus
-    expat
-    fontconfig
-    gcc
-    glib
-    gtk3
-    libgbm
-    libxkbcommon
-    mesa
-    nspr
-    nss
-    pango
-    xorg.libX11
-    xorg.libXScrnSaver
-    xorg.libXcomposite
-    xorg.libXcursor
-    xorg.libXdamage
-    xorg.libXext
-    xorg.libXfixes
-    xorg.libXi
-    xorg.libXrandr
-    xorg.libXrender
-    xorg.libXtst
-    xorg.libxcb
-  ];
-
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
