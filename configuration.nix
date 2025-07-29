@@ -119,7 +119,6 @@
       obsidian
       qbittorrent
       rclone
-      ungoogled-chromium
 
       # Socials
       teams-for-linux   # Microsoft Teams
