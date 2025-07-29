@@ -114,18 +114,13 @@
       # Uncategorized Apps
       anki-bin
       gimp3
-      # newsflash
-      # nyxt                # this looking cool
       obsidian
       qbittorrent
       rclone
 
       # Socials
       teams-for-linux   # Microsoft Teams
-      teamspeak3        # Teamspeak
       vesktop           # Discord
-      # telegram-desktop  # Telegram
-      # zapzap            # Whatsapp
 
       # Spotify + Gnome extension
       gnomeExtensions.spotify-controls
@@ -138,9 +133,6 @@
 
       # Office suite
       libreoffice-qt6-fresh
-      # hunspell
-      # hunspellDicts.en_US
-      # hunspellDicts.it_IT
 
       # Development?
       android-studio
