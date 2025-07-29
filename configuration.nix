@@ -118,6 +118,10 @@
       qbittorrent
       rclone
 
+      # Development browsers
+      firefox-devedition
+      google-chrome
+
       # Socials
       teams-for-linux   # Microsoft Teams
       vesktop           # Discord
