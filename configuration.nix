@@ -141,13 +141,14 @@
       # Development?
       android-studio
       bruno
+      gcc
+      gnumake
       jetbrains.idea-ultimate
       maven
       nerd-fonts.jetbrains-mono
       nodejs_22
       podman-desktop
       vscode
-      gcc
 
       # Emacs
       djview                   # Viewing djvu files
