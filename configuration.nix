@@ -155,10 +155,6 @@
       emacs
       emacs-lsp-booster
       emacsPackages.pdf-tools
-
-      # Language servers
-      angular-language-server  # Angular LSP
-      jdt-language-server      # Eclipse JDT LSP
     ];
   };
 
@@ -250,7 +246,6 @@
 
     # Node packages
     nodePackages."@angular/cli"
-    nodePackages."@astrojs/language-server"
   ];
 
   # Exclude packages from Gnome
