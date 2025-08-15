@@ -107,6 +107,9 @@
 
   services.udev.packages = with pkgs; [ gnome-settings-daemon ];
 
+  # Allow my user to sudo without password
+  security.sudo.wheelNeedsPassword = false;
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.lloyd = {
     isNormalUser = true;
