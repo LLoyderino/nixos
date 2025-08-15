@@ -181,12 +181,6 @@
   # Zoxide
   programs.zoxide.enable = true;
 
-  # Neovim
-  programs.neovim.enable = true;
-  programs.neovim.defaultEditor = true;
-  programs.neovim.viAlias = true;
-  programs.neovim.vimAlias = true;
-
   # Emacs
   services.emacs.install = true;
   services.emacs.enable = true;
