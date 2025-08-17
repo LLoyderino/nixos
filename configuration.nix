@@ -142,7 +142,7 @@
       yt-dlp         # YouTube support
 
       # Office suite
-      libreoffice-qt6-fresh
+      libreoffice-fresh
 
       # Development?
       android-studio
