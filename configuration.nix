@@ -160,7 +160,6 @@
       djview                   # Viewing djvu files
       djvulibre                #
       emacs
-      emacs-lsp-booster
       emacsPackages.pdf-tools
     ];
   };
