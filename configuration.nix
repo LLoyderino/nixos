@@ -124,6 +124,11 @@
       qbittorrent
       rclone
 
+      # Dictionaries
+      aspell
+      aspellDicts.en
+      aspellDicts.it
+
       # Development browsers
       firefox-devedition
       google-chrome
