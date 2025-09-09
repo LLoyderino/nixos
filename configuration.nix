@@ -150,11 +150,8 @@
       libreoffice-fresh
 
       # Development?
-      android-studio
-      bruno
       gcc
       gnumake
-      jetbrains.idea-ultimate
       maven
       nerd-fonts.jetbrains-mono
       nodejs_22
