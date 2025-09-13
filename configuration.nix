@@ -226,12 +226,6 @@
   nixpkgs.config = {
     # Allow unfree packages
     allowUnfree = true;
-
-    packageOverrides = pkgs: {
-      unstable = import <nixos-unstable> {
-        config = config.nixpkgs.config;
-      };
-    };
   };
 
   # List packages installed in system profile. To search, run:
