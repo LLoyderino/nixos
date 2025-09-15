@@ -137,10 +137,6 @@
       teams-for-linux   # Microsoft Teams
       vesktop           # Discord
 
-      # Spotify + Gnome extension
-      gnomeExtensions.spotify-controls
-      spotify
-
       # Video player
       mpv
       streamlink     # twitch.tv support
