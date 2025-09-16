@@ -6,6 +6,10 @@ Currently running [Gnome](https://www.gnome.org) as my Desktop Environment.
 
 Not using flakes nor home manager as this suffices.
 
+## Screenshot
+
+![System screenshot](./assets/system-screenshot.png)
+
 ## Installation
 
 1. Clone the repository to `/etc/nixos`
