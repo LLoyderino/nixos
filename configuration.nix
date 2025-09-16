@@ -138,7 +138,7 @@
       vesktop           # Discord
 
       # Video player
-      mpv
+      celluloid
       streamlink     # twitch.tv support
       yt-dlp         # YouTube support
 
@@ -167,6 +167,11 @@
 
   # Zoom
   programs.zoom-us.enable = true;
+
+  # Aliases
+  environment.shellAliases = {
+    mpv = "celluloid";
+  };
 
   # ZSH
   programs.zsh = {
