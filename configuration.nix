@@ -178,8 +178,11 @@
   programs.zoxide.enable = true;
 
   # Emacs
-  services.emacs.install = true;
-  services.emacs.enable = true;
+  services.emacs = {
+    install = true;
+    enable = true;
+    defaultEditor = true;
+  };
 
   # Tmux
   programs.tmux = {
