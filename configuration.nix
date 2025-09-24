@@ -246,9 +246,6 @@
     fzf
     ghostty
     ripgrep
-
-    # Node packages
-    nodePackages."@angular/cli"
   ];
 
   # Jackett
