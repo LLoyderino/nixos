@@ -60,6 +60,7 @@
   # Enable the GNOME Desktop Environment.
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
+  services.gnome.core-apps.enable = false;
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -232,6 +233,11 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    # Gnome apps that I actually use
+    geary
+    gnome-calculator
+    gnome-calendar
+
     # Extra Gnome goodies
     gnomeExtensions.appindicator
     gnomeExtensions.freon
@@ -244,25 +250,6 @@
     # Node packages
     nodePackages."@angular/cli"
   ];
-
-  # Exclude packages from Gnome
-  environment.gnome.excludePackages = (with pkgs; [
-    decibels
-    epiphany
-    evince
-    gnome-connections
-    gnome-console
-    gnome-contacts
-    gnome-font-viewer
-    gnome-maps
-    gnome-music
-    gnome-terminal
-    gnome-text-editor
-    gnome-tour
-    simple-scan
-    totem
-    yelp
-  ]);
 
   # Jackett
   # services.jackett.enable = true;
