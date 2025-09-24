@@ -121,39 +121,32 @@
       # Uncategorized Apps
       anki-bin
       gimp3
-      obsidian
+      libreoffice-fresh
       qbittorrent
       rclone
+      vesktop
 
       # Dictionaries
       aspell
       aspellDicts.en
       aspellDicts.it
 
-      # Development browsers
-      firefox-devedition
-      google-chrome
-
-      # Socials
-      teams-for-linux   # Microsoft Teams
-      vesktop           # Discord
-
       # Video player
       celluloid
       streamlink     # twitch.tv support
       yt-dlp         # YouTube support
 
-      # Office suite
-      libreoffice-fresh
-
-      # Development?
+      # Development
       gcc
       gnumake
       maven
       nerd-fonts.jetbrains-mono
       nodejs_22
       podman-desktop
-      vscode
+
+      # Development browsers
+      firefox-devedition
+      google-chrome
 
       # Emacs
       djview                   # Viewing djvu files
@@ -165,9 +158,6 @@
 
   # Firefox.
   programs.firefox.enable = true;
-
-  # Zoom
-  programs.zoom-us.enable = true;
 
   # Aliases
   environment.shellAliases = {
