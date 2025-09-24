@@ -238,10 +238,6 @@
     ripgrep
   ];
 
-  # Jackett
-  # services.jackett.enable = true;
-  # services.flaresolverr.enable = true;
-  
   # Environment Variables
   environment.variables = {
     XDG_CONFIG_HOME = "$HOME/.config";
