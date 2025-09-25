@@ -230,6 +230,7 @@
     geary
     gnome-calculator
     gnome-calendar
+    nautilus
 
     # Extra Gnome goodies
     gnomeExtensions.appindicator
