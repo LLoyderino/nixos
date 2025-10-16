@@ -237,6 +237,7 @@
 
     # Extra Gnome goodies
     gnomeExtensions.appindicator
+    gnomeExtensions.caffeine
     gnomeExtensions.freon
 
     # Utils I want to have on my root :)
