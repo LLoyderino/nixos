@@ -193,7 +193,10 @@
   };
 
   # Git
-  programs.git.enable = true;  
+  programs.git.enable = true;
+  programs.git.config = {
+    pull.rebase = true;
+  };
 
   # Lazygit
   programs.lazygit.enable = true;
