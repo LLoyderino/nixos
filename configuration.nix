@@ -87,6 +87,15 @@
     nssmdns6 = true;
   };
 
+  # Scanner
+  hardware.sane = {
+    enable = true;
+    extraBackends = [
+      pkgs.sane-airscan
+      pkgs.hplipWithPlugin
+    ];
+  };
+
   # Enable sound with pipewire.
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
@@ -115,13 +124,14 @@
   users.users.lloyd = {
     isNormalUser = true;
     description = "LLoyd";
-    extraGroups = [ "networkmanager" "wheel" "libvirt" ];
+    extraGroups = [ "networkmanager" "wheel" "libvirt" "scanner" "lp" ];
     shell = pkgs.zsh;
     packages = with pkgs; [
       # Uncategorized Apps
       anki-bin
       gimp3
       libreoffice-fresh
+      pdfarranger
       qbittorrent
       rclone
       vesktop
