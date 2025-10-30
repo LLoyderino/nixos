@@ -253,7 +253,10 @@
     # Utils I want to have on my root :)
     fzf
     ghostty
+    killall
     ripgrep
+    wget
+    zip
   ];
 
   # Environment Variables
