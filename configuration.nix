@@ -208,9 +208,6 @@
     pull.rebase = true;
   };
 
-  # Lazygit
-  programs.lazygit.enable = true;
-
   # Java Development
   programs.java.enable = true;
 
