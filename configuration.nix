@@ -245,6 +245,7 @@
     # Extra Gnome goodies
     gnomeExtensions.appindicator
     gnomeExtensions.caffeine
+    gnomeExtensions.dash-to-dock
     gnomeExtensions.freon
 
     # Utils I want to have on my root :)
