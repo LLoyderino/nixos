@@ -153,6 +153,7 @@
       maven
       nerd-fonts.jetbrains-mono
       nodejs_22
+      podman-compose
       podman-desktop
 
       # Development browsers
