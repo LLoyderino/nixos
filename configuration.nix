@@ -140,6 +140,7 @@
       aspell
       aspellDicts.en
       aspellDicts.it
+      aspellDicts.pl
 
       # Video player
       celluloid
