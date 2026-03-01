@@ -143,7 +143,7 @@
       aspellDicts.pl
 
       # Video player
-      celluloid
+      mpv
       streamlink     # twitch.tv support
       yt-dlp         # YouTube support
 
