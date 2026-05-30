@@ -131,21 +131,8 @@
       anki-bin
       gimp3
       libreoffice-fresh
-      pdfarranger
-      qbittorrent
-      rclone
-      vesktop
-
-      # Dictionaries
-      aspell
-      aspellDicts.en
-      aspellDicts.it
-      aspellDicts.pl
-
-      # Video player
       mpv
-      streamlink     # twitch.tv support
-      yt-dlp         # YouTube support
+      pdfarranger
 
       # Development
       gcc
@@ -186,9 +173,6 @@
       theme = "robbyrussell";
     };
   };
-
-  # Zoxide
-  programs.zoxide.enable = true;
 
   # Emacs
   services.emacs = {
@@ -265,10 +249,8 @@
     gnomeExtensions.freon
 
     # Utils I want to have on my root :)
-    fzf
     ghostty
     killall
-    ripgrep
     unzip
     wget
     zip
