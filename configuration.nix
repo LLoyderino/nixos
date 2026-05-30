@@ -269,6 +269,7 @@
     ghostty
     killall
     ripgrep
+    unzip
     wget
     zip
   ];
