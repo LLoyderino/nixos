@@ -150,6 +150,7 @@
       # Development
       gcc
       gnumake
+      ibm-plex
       maven
       nerd-fonts.jetbrains-mono
       nodejs_22
@@ -195,6 +196,19 @@
     enable = true;
     defaultEditor = true;
   };
+
+  # Fonts
+  nixpkgs.overlays = [
+    (final: prev: {
+      ibm-plex = prev.ibm-plex.override {
+        families = [ "mono" ];
+      };
+    })
+  ];
+
+  fonts.packages = with pkgs; [
+    ibm-plex
+  ];
 
   # Tmux
   programs.tmux = {
