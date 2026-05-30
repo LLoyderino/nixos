@@ -159,11 +159,6 @@
   # Firefox.
   programs.firefox.enable = true;
 
-  # Aliases
-  environment.shellAliases = {
-    mpv = "celluloid";
-  };
-
   # ZSH
   programs.zsh = {
     enable = true;
