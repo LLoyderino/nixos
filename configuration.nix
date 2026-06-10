@@ -243,6 +243,12 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+
+    (st.overrideAttrs (oldAttrs: rec {
+      configFile = writeText "config.def.h" (builtins.readFile ./st-config.h);
+      postPatch = "${oldAttrs.postPatch}\n cp ${configFile} config.def.h";
+    }))
+
     killall
     unzip
     wget
