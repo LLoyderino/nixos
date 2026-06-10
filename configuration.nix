@@ -55,12 +55,20 @@
   };
 
   # Enable the X11 windowing system.
-  services.xserver.enable = true;
+  services.xserver = {
+    enable = true;
 
-  # Enable the GNOME Desktop Environment.
-  services.displayManager.gdm.enable = true;
-  services.desktopManager.gnome.enable = true;
-  services.gnome.core-apps.enable = false;
+    desktopManager.xterm.enable = false;
+    windowManager.i3 = {
+      enable = true;
+      extraPackages = with pkgs; [
+        dmenu
+        i3status
+      ];
+    };
+  };
+
+  programs.i3lock.enable = true;
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -115,7 +123,7 @@
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
-  services.udev.packages = with pkgs; [ gnome-settings-daemon ];
+  # services.udev.packages = with pkgs; [ gnome-settings-daemon ];
 
   # Allow my user to sudo without password
   security.sudo.wheelNeedsPassword = false;
@@ -231,19 +239,6 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    # Gnome apps that I actually use
-    geary
-    gnome-calculator
-    gnome-calendar
-    nautilus
-
-    # Extra Gnome goodies
-    gnomeExtensions.appindicator
-    gnomeExtensions.caffeine
-    gnomeExtensions.dash-to-dock
-    gnomeExtensions.freon
-
-    # Utils I want to have on my root :)
     ghostty
     killall
     unzip
