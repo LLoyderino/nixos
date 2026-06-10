@@ -153,8 +153,6 @@
       maven
       nerd-fonts.jetbrains-mono
       nodejs_22
-      podman-compose
-      podman-desktop
 
       # Development browsers
       firefox-devedition
@@ -218,22 +216,6 @@
   # Java Development
   programs.java.enable = true;
 
-  # Virtual machines
-  programs.virt-manager.enable = true;
-  virtualisation.libvirtd.enable = true;
-  virtualisation.spiceUSBRedirection.enable = true;
-
-  # Containers
-  virtualisation = {
-    containers.enable = true;
-
-    podman = {
-      enable = true;
-      dockerCompat = true;
-      autoPrune.enable = true;
-    };
-  };
-  
   # Packages
   nixpkgs.config = {
     # Allow unfree packages
