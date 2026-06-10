@@ -139,28 +139,18 @@
     extraGroups = [ "networkmanager" "wheel" "libvirt" "scanner" "lp" ];
     shell = pkgs.zsh;
     packages = with pkgs; [
-      # Uncategorized Apps
       anki-bin
       gimp3
+      ibm-plex
       libreoffice-fresh
       mpv
       pdfarranger
-
-      # Development
-      gcc
-      gnumake
-      ibm-plex
-      maven
-      nerd-fonts.jetbrains-mono
-      nodejs_22
 
       # Development browsers
       firefox-devedition
       google-chrome
 
       # Emacs
-      djview                   # Viewing djvu files
-      djvulibre                #
       emacs
       emacsPackages.pdf-tools
     ];
@@ -212,9 +202,6 @@
   programs.git.config = {
     pull.rebase = true;
   };
-
-  # Java Development
-  programs.java.enable = true;
 
   # Packages
   nixpkgs.config = {
