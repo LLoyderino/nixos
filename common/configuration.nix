@@ -141,9 +141,10 @@
       mpv
       pdfarranger
 
-      # Development browsers
+      # Browsers
       firefox-devedition
       google-chrome
+      tor-browser
 
       # Emacs
       aspell
