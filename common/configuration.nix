@@ -25,12 +25,6 @@
     # wifi.powersave = false; # This should™ help against NetworkManager crashing after sleep mode
   };
 
-  # Bluetooth settings
-  hardware.bluetooth = {
-    enable = true;
-    powerOnBoot = false;
-  };
-
   # Set your time zone.
   time.timeZone = "Europe/Rome";
 
@@ -72,34 +66,6 @@
     variant = "";
   };
 
-  # Enable CUPS to print documents.
-  services.printing = {
-    enable = true;
-    drivers = with pkgs; [
-      gutenprint
-      # HP Printer drivers
-      hplip
-      hplipWithPlugin
-    ];
-    extraConf = ''
-      ErrorPolicy retry-job
-    '';
-  };
-  services.avahi = {
-    enable = true;
-    nssmdns4 = true;
-    nssmdns6 = true;
-  };
-
-  # Scanner
-  hardware.sane = {
-    enable = true;
-    extraBackends = [
-      pkgs.sane-airscan
-      pkgs.hplipWithPlugin
-    ];
-  };
-
   # Enable sound with pipewire.
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
@@ -115,14 +81,6 @@
     # no need to redefine it in your config for now)
     #media-session.enable = true;
   };
-
-  # Enable touchpad support (enabled default in most desktopManager).
-  services.libinput = {
-    enable = true;
-    touchpad.naturalScrolling = true;
-  };
-
-  # services.udev.packages = with pkgs; [ gnome-settings-daemon ];
 
   # Allow my user to sudo without password
   security.sudo.wheelNeedsPassword = false;
@@ -242,14 +200,6 @@
 
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
-
-  # Open ports in the firewall.
-  networking.firewall = {
-    allowedTCPPorts = [ 631 ];
-    # allowedUDPPorts = [ ... ];
-  };
-  # Or disable the firewall altogether.
-  # networking.firewall.enable = false;
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
