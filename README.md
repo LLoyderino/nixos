@@ -10,4 +10,4 @@ Not using flakes nor home manager as this suffices.
 
 1. Clone the repository to `/etc/nixos`
 2. Regenerate the hardware configuration with `nixos-generate-config`
-3. Build the system with `sudo nixos-rebuild switch`
+3. Build the system with `sudo NIXOS_CONFIG=/etc/nixos/hosts/<host>/configuration.nix nixos-rebuild switch`
