@@ -146,6 +146,8 @@
       google-chrome
 
       # Emacs
+      aspell
+      aspellDicts.en
       emacs
       emacsPackages.pdf-tools
     ];
