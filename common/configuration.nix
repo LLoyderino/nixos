@@ -195,9 +195,6 @@
 
   # List services that you want to enable:
 
-  # Fingerprint support
-  services.fprintd.enable = true;
-
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
 

@@ -12,6 +12,9 @@
     powerOnBoot = false;
   };
 
+  # Fingerprint support
+  services.fprintd.enable = true;
+
   # Enable touchpad support (enabled default in most desktopManager).
   services.libinput = {
     enable = true;
