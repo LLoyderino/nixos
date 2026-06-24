@@ -28,7 +28,11 @@
 
   # Packages
   users.users.lloyd.packages = with pkgs; [
-    pkgs.dmenu
-    pkgs.st
+    # User packages
+  ];
+
+  environment.systemPackages = with pkgs; [
+    dmenu
+    st
   ];
 }
