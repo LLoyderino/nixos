@@ -7,6 +7,24 @@
       ./hardware-configuration.nix
     ];
 
+  # Enable the X11 windowing system.
+  services.xserver = {
+    enable = true;
+
+    desktopManager.xterm.enable = false;
+    windowManager.i3 = {
+      enable = true;
+      extraPackages = with pkgs; [
+        dmenu
+        i3status
+        st
+      ];
+    };
+  };
+
+  programs.i3lock.enable = true;
+
+  # Bluetooth
   hardware.bluetooth = {
     enable = true;
     powerOnBoot = false;

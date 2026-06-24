@@ -15,4 +15,20 @@
 
   # Virtualbox guest CD
   virtualisation.virtualbox.guest.enable = true;
+
+  # dwm
+  services.xserver.enable = true;
+  services.xserver.windowManager.dwm.enable = true;
+  services.dwm-status.enable = true;
+
+  # windows key as mod key
+  services.xserver.windowManager.dwm.package = pkgs.dwm.override {
+    patches = [ ./dwm.patch ];
+  };
+
+  # Packages
+  users.users.lloyd.packages = with pkgs; [
+    pkgs.dmenu
+    pkgs.st
+  ];
 }

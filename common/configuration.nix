@@ -43,23 +43,6 @@
     LC_TIME = "en_US.UTF-8";
   };
 
-  # Enable the X11 windowing system.
-  services.xserver = {
-    enable = true;
-
-    desktopManager.xterm.enable = false;
-    windowManager.i3 = {
-      enable = true;
-      extraPackages = with pkgs; [
-        dmenu
-        i3status
-        st
-      ];
-    };
-  };
-
-  programs.i3lock.enable = true;
-
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "us";
